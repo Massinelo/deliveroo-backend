@@ -1,9 +1,9 @@
 const express = require('express');
-const cors = require('corse');
+const cors = require('cors');
 const app = express();
 app.use(cors());
 
-app.get('/', (res, req) => {
+app.get('/', (req, res) => {
   res.json({
     restaurant: {
       path: 'Le Pain Quotidien',
